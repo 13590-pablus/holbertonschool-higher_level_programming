@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-word = "Holberton"
-word = word[3:] + word[:3]
-word = word[-2:] + word[:-2]
-print(word)
+str = "Holberton"
+str = str[3:] + str[:3]
+str = str[-2:] + str[:-2]
+print(str)
