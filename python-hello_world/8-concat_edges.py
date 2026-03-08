@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 str = "Holberton"
-str = str[3:] + str[:3]
-str = str[-2:] + str[:-2]
+str = str[3:]
+str = "object-oriented programming with Python"
 print(str)
