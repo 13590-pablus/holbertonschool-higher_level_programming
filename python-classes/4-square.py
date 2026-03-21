@@ -11,7 +11,7 @@ class Square:
         Args:
             size (int): The size of the new square.
         """
-        self.size = size  # Burada '__size' yox, 'size' yazırıq ki, setter işə düşsün
+        self.size = size
 
     @property
     def size(self):
