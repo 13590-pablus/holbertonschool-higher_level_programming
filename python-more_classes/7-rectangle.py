@@ -60,8 +60,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        # str(self.print_symbol) istifadə edirik ki, siyahı gələndə də işləsin
-        rect_lines = [str(self.print_symbol) * self.__width for _ in range(self.__height)]
+        symbol = str(self.print_symbol)
+        rect_lines = [symbol * self.__width for _ in range(self.__height)]
         return "\n".join(rect_lines)
 
     def __repr__(self):
