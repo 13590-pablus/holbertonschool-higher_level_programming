@@ -1,6 +1,5 @@
-"""Module 0-square
-This module defines an empty class Square.
-"""
+#!/usr/bin/python3
+"""A module for working with squares."""
 
 
 class Square:
