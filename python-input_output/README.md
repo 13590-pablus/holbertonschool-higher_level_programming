@@ -18,3 +18,4 @@ read_file("dosya_adi.txt")
 ## Gereksinimler
 * Python 3.x
 * Modül import etmek yasaktır (görev bazlı).
+| **1-write_file.py** | Bir dosyaya metin yazan ve karakter sayısını dönen fonksiyon. |
