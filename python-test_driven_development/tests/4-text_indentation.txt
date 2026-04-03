@@ -1,0 +1,34 @@
+================================
+How to use 4-text_indentation
+================================
+
+>>> text_indentation = __import__('4-text_indentation').text_indentation
+
+>>> text_indentation("Hello. How are you? I am fine: good.")
+Hello.
+<BLANKLINE>
+How are you?
+<BLANKLINE>
+I am fine:
+<BLANKLINE>
+good.
+<BLANKLINE>
+
+>>> text_indentation("   Space before. And after.   ")
+Space before.
+<BLANKLINE>
+And after.
+<BLANKLINE>
+
+>>> text_indentation("No punctuation here")
+No punctuation here
+
+>>> text_indentation(123)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+    ...
+TypeError: text must be a string
