@@ -19,8 +19,9 @@ if __name__ == "__main__":
     # Kursor yaradılır
     cursor = db.cursor()
 
-    # SQL sorğusu: Adı 'N' ilə başlayanları seç (Böyük-kiçik hərf həssaslığı üçün BINARY)
-    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC")
+    # SQL sorğusu: Uzun sətri bölürük ki, pycodestyle xətası verməsin
+    query = "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id ASC"
+    cursor.execute(query)
 
     # Nəticələr götürülür
     rows = cursor.fetchall()
